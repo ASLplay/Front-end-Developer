@@ -61,7 +61,7 @@
 
 
 h2 {
-    padding: 5%;
+    padding: 5% 0 2%;
 font-family: Monserrat-Bold;
 font-size: clamp(20px, 3vw, 32px);
 }

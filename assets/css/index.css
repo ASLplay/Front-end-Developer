@@ -131,6 +131,36 @@ background-color: var(--bg-color-main);
 #skills h2{
     color: var(--h2-color);
     text-align: center;
+}
+
+#skills .skillsBlock .skillsImg{
+    width: 60%;
+    margin: 2% auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#skills .skillsBlock .skillsImg svg{
+    width: 10%;
+    min-width: 50px;
+    margin: 2% 5%;
+}
+#skills .skillsBlock .skillsContent{
+    width: 80%;
+    margin: auto;
+}
+
+#skills .skillsBlock .skillsContent p{
+    color: var(--h2-color);
+    font-family: Monserrat-Regular;
+    width: 80%;
+    margin: auto;
+}
+
+/* Работы */
+#works {
+    background: var(--bg-color-main);
     height: 100vh;
 }
 
