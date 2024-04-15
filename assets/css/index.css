@@ -13,7 +13,6 @@
 
 .background svg {
     margin-top: 5%;
-    /* fill: linear-gradient(90deg, #242F64, #1D4C7A); */
     width: 40%;
     height: 60%;
 }
@@ -21,7 +20,7 @@
 /* Обо мне */
 #about {
     margin: 5% auto 0;
-    height: 90vh;
+    height: 100vh;
     align-items: center;
     display: flex;
     width: 60%;
@@ -50,7 +49,7 @@
     border: none;
     display: flex;
     width: max-content;
-    padding: 2% 3.5%;
+    padding: 2.5% 4%;
     cursor: pointer;
     transition: .25s;
 }
@@ -58,6 +57,70 @@
 #about .aboutBlock button:hover {
     transform: scale(110%);
     transition: .25s;
+}
+
+/* Обо мне контент */
+.aboutBackground {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    transition-duration: .2s;
+}
+
+.aboutBackground button {
+    background: var(--liner-gradient);
+    color:white;
+    border: none;
+    display: flex;
+    width: max-content;
+    padding: 1% 2%;
+    cursor: pointer;
+    margin-top: 2%;
+    transition: .25s;
+}
+
+.aboutBackground button:hover {
+    transform: scale(110%);
+    transition: .25s;
+}
+
+/* Контент */
+.aboutContent {
+    font-family: Monserrat-Regular;
+    display: flex;
+    width: 60%;
+    border: 0.2vw solid white;
+    align-items: center;
+    padding: 2%;    
+    background: var(--bg-color-main);
+    border-radius: 20px;
+}
+
+.aboutContent .aboutText{
+    padding: 2%;
+    width: 60%;
+}
+
+.aboutContent .aboutText p{
+    width: 100%;    
+    padding: 2%;
+}
+
+.aboutImg {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    min-width: 250px;
+}
+
+.aboutContent img{
+    width: 60%;
 }
 
 /* Навыки */
@@ -68,6 +131,7 @@ background-color: var(--bg-color-main);
 #skills h2{
     color: var(--h2-color);
     text-align: center;
+    height: 100vh;
 }
 
 /* Контакты */
@@ -77,12 +141,13 @@ background-color: var(--bg-color-main);
     top: calc(100vh/2.7);
     z-index: 998;
     padding: 2vh;
-    background: rgba(255, 255, 255, 0.05);
+    background: #282930;
     border-radius: 20px 0 0 20px;
     width: 2%;
     display: flex;
     flex-direction: column;
     min-width: 30px;
+    transition-duration: .2s;
 }
 
 .contactBlock a {

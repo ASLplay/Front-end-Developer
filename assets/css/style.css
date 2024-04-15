@@ -20,6 +20,27 @@
 }
 
 
+/* Работает в Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--bg-button) rgba(255, 166, 0, 0);
+  }
+  
+  /* Работает в Chrome, Edge и Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--bg-button);
+    border-radius: 20px;
+    border: 3px solid orange;
+  }
+
 *{
     margin: 0;
     padding: 0;
@@ -54,6 +75,12 @@ h3 {
 button {
     font-size: clamp(14px, 2vw, 20px);
     font-family: Monserrat-Bold;
+}
+
+.close {
+    opacity: 0;
+    transition-duration: .2s;
+    pointer-events: none;
 }
 
 html {
@@ -116,6 +143,7 @@ header .headerContent nav ul li a {
     cursor: pointer;
     user-select: none;
 }
+
 header .headerContent nav ul li a:hover {
     border-bottom: 2px solid var(--bg-button) !important;
     transition-duration: .2s ;
