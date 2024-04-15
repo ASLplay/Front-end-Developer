@@ -1,0 +1,122 @@
+
+@font-face {
+    font-family: 'Monserrat-Light';
+    src: url(../fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Monserrat-Regular';
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Monserrat-Medium';
+    src: url(../fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Monserrat-Bold';
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-size: clamp(12px,1vw,20px);
+}
+
+:root {
+    --color-text: #fff;
+    --color-a: #B0B2C3;
+    --bg-color: #1C1D25;
+    --liner-gradient: linear-gradient(90deg, #EF3636, #F06449);
+    --bg-button: #EF3636;
+    --h2-color:#4a4a4a;
+    --bg-color-main: #F3F3F3;
+}
+
+
+h2 {
+    padding: 5%;
+font-family: Monserrat-Bold;
+font-size: clamp(20px, 3vw, 32px);
+}
+
+h3 {
+    font-family: Monserrat-Regular;
+    margin: 3% 0;
+    font-size: clamp(14px, 2vw, 20px);
+}
+
+button {
+    font-size: clamp(14px, 2vw, 20px);
+    font-family: Monserrat-Bold;
+}
+
+html {
+    background: var(--bg-color);
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    padding: 1% 0;
+    display: flex;
+    z-index: 999;
+    position: fixed;
+    background-color: var(--bg-color);
+}
+
+header .headerContent {
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .headerContent img {
+    cursor: pointer;
+}
+
+header .headerContent nav {
+    width: 60%;
+}
+
+header .headerContent nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+header .headerContent nav ul li  {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+header .headerContent nav ul li a {
+    font-family: Monserrat-Bold;
+    color: var(--color-a);
+    text-align: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+    transition-duration: .2s;
+    cursor: pointer;
+    user-select: none;
+}
+header .headerContent nav ul li a:hover {
+    border-bottom: 2px solid var(--bg-button) !important;
+    transition-duration: .2s ;
+}
