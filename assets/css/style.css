@@ -114,10 +114,13 @@ header .headerContent {
     margin: auto;
     display: flex;
     justify-content: space-between;
+    transition: .25s;
 }
 
 header .headerContent img {
     cursor: pointer;
+    width: 2%;
+    min-width: 25px;
 }
 
 header .headerContent nav {
@@ -149,4 +152,34 @@ header .headerContent nav ul li a {
 header .headerContent nav ul li a:hover {
     border-bottom: 2px solid var(--bg-button) !important;
     transition-duration: .2s ;
+}
+
+@media (max-width:1000px) {
+    header .headerContent {
+        width: 90%;
+        transition: .25s;
+    }
+
+    header .headerContent nav {
+        width: 80%;
+    }
+}
+
+@media (max-width:700px) {
+    header .headerContent nav {
+        width: 100%;
+    }
+}
+
+@media (max-width:550px) {
+    header .headerContent {
+        flex-direction: column;
+        padding-top: 1%;
+    }
+    header .headerContent nav {
+        padding: 2% 0 1%;
+    }
+    header .headerContent {
+        width: 95%;
+    }
 }
