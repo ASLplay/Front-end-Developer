@@ -100,6 +100,7 @@
     padding: 2%;    
     background: var(--bg-color-main);
     border-radius: 20px;
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.30));
 }
 
 .aboutContent .aboutText{
@@ -161,8 +162,54 @@ background-color: var(--bg-color-main);
 /* Работы */
 #works {
     background: var(--bg-color-main);
-    height: 100vh;
 }
+
+#works h2{
+    text-align: center;
+}
+
+#works .worksBlock {
+    background-color: var(--bg-color);
+    padding: 1.5% 0;
+    transition: .35s;
+}
+
+#works .worksBlock .worksContent{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#works .worksBlock .worksContent img{
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    border: 0.2vw solid  var(--bg-color-main);
+    transition: .35s;
+    filter: drop-shadow(2px 2px 3px black);
+}
+
+#works .worksBlock .worksContent p{
+    text-align: center;
+    margin-top: 2%;
+    font-family: Monserrat-Bold;
+    color: white;
+    font-size: clamp(16px,2vw,30px);
+    filter: drop-shadow(2px 2px 3px black);
+    transition: .35s;
+}
+
+/* Услуги */
+#services {
+    background: var(--bg-color-main);
+}
+
+#services h2{
+    text-align: center;
+}
+
 
 /* Контакты */
 .contactBlock {

@@ -64,11 +64,13 @@ h2 {
     padding: 5% 0 2%;
 font-family: Monserrat-Bold;
 font-size: clamp(20px, 3vw, 32px);
+color: var(--h2-color);
 }
 
 h3 {
     font-family: Monserrat-Regular;
     margin: 3% 0;
+    
     font-size: clamp(14px, 2vw, 20px);
 }
 

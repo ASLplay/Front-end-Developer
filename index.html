@@ -11,7 +11,9 @@
 </head>
 
 <body>
+    <!-- Лэйаут -->
     <div class="layout">
+        <!-- Хэдр -->
         <header>
             <div class="headerContent">
                 <img id="logo" src="./assets/img/other/logo.svg" alt="Логотип">
@@ -27,7 +29,9 @@
             </div>
         </header>
 
+        <!-- Контент -->
         <main>
+            <!-- Задний фон -->
             <div class="background">
                 <svg width="42" height="53" viewBox="0 0 42 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <defs>
@@ -41,7 +45,7 @@
                         fill="url(#gradient)" />
                 </svg>
             </div>
-
+            <!-- Обо мне -->
             <div id="about">
                 <div class="aboutBlock">
                     <h2>Панферов Сергей</h2>
@@ -50,6 +54,7 @@
                 </div>
 
             </div>
+            <!-- Навыки -->
             <div id="skills">
                 <h2>Мои навыки</h2>
                 <div class="skillsBlock">
@@ -76,16 +81,26 @@
                     </div>
                 </div>
             </div>
-
+            <!-- Работы -->
             <div id="works">
-                
+                <h2>Мои работы</h2>
+                <div class="worksBlock">
+                    <div class="worksContent">
+                        <img src="./assets/img/content/work1.png" alt="Работа">
+                        <p>NexusUnity</p>
+                    </div>
+                </div>
             </div>
+            <div id="services">
+                <h2>Мои услуги</h2>
+            </div>
+
         </main>
 
         <footer>
 
         </footer>
-
+        <!-- Контент обо мне-->
         <div class="aboutBackground close">
             <div class="aboutContent">
                 <div class="aboutText">
@@ -104,7 +119,7 @@
             <button onclick="closeAbout()">Закрыть</button>
         </div>
 
-
+        <!-- Контакты -->
         <div class="contactBlock close">
             <a href="https://vk.com/asl_play" target="_blank"><img src="./assets/img/icons/vk.svg" alt="vk"></a>
             <a href="https://t.me/asl_play" target="_blank"><img src="./assets/img/icons/telegram.svg"
@@ -120,7 +135,8 @@
     </div>
     <script src="./assets/js/functions/about.js"></script>
     <script src="./assets/js/functions/contact.js"></script>
-    <script src="./assets/js/easter eggs/honk.js"></script>
+    <script src="./assets/js/functions/works-scroll.js"></script>
+    <script src="./assets/js/easter-eggs/honk.js"></script>
 </body>
 
 </html>
