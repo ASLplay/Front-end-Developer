@@ -9,7 +9,7 @@ const workContent = [
     },
     {
         src: "./assets/img/content/work3.png",
-        pContent: "Font-end developer"
+        pContent: "Front-end developer"
     },
     {
         src: "./assets/img/content/work4.png",
@@ -23,10 +23,6 @@ const workContent = [
         src: "./assets/img/content/work6.png",
         pContent: "Lap-store"
     },
-    {
-        src: "./assets/img/content/work7.png",
-        pContent: "Your Studio"
-    }
 ];
 
 const worksImg = document.getElementsByClassName("worksContent")[0].getElementsByTagName("img")[0];
@@ -36,42 +32,54 @@ const workBackground = document.getElementsByClassName("worksBlock")[0];
 let workActive = 0;
 
 worksImg.addEventListener('mousedown', clickScroll);
+let timer;
+
+function setScroll() {
+
+    worksImg.classList.add("close");
+    worksP.classList.add("close");
+
+    if (workActive == workContent.length)
+        workActive = 0;
+
+    setTimeout(() => {
+        
+        worksImg.src = workContent[workActive].src;
+        worksP.innerHTML = workContent[workActive].pContent;
+        workBackground.style = `background: url(${workContent[workActive].src}) no-repeat;
+        background-position: center;
+        background-size: cover;`
+
+        worksImg.classList.remove("close");
+        worksP.classList.remove("close");
+    }, 350);
+
+    timer = setTimeout(autoScroll, 10000)
+}
 
 function clickScroll(event) {
+
+    if (timer != undefined) {
+        clearTimeout(timer)
+        timer = undefined;
+    }
+
     if (event.clientX < window.screen.width / 2) {
         workActive--;
-        if (workActive < 0)
+
+        if (workActive < 0) {
             workActive = workContent.length - 1;
+        }
     }
     else
         workActive++;
 
-    worksImg.classList.add("close");
-    worksP.classList.add("close");
-    if (workActive == workContent.length)
-        workActive = 0;
-    setTimeout(() => {
-        worksImg.src = workContent[workActive].src;
-        worksP.innerHTML = workContent[workActive].pContent;
-        workBackground.style = `background: rgba(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, 0.5);`
-        worksImg.classList.remove("close");
-        worksP.classList.remove("close");
-    }, 350);
+    setScroll();
 }
 
 function autoScroll() {
     workActive++;
-    worksImg.classList.add("close");
-    worksP.classList.add("close");
-    if (workActive == workContent.length)
-        workActive = 0;
-    setTimeout(() => {
-        worksImg.src = workContent[workActive].src;
-        worksP.innerHTML = workContent[workActive].pContent;
-        workBackground.style = `background: rgba(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, 0.5);`
-        worksImg.classList.remove("close");
-        worksP.classList.remove("close");
-    }, 350);
+    setScroll();
 }
 
-setInterval(autoScroll, 3000);
+timer = setTimeout(autoScroll, 10000)
