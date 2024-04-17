@@ -216,6 +216,7 @@ footer .footerBlock {
 footer .footerBlock img {
     width: 5%;
     min-width: 40px;
+    cursor: pointer;
 }
 
 footer .footerBlock nav {
@@ -289,4 +290,10 @@ footer .footerBlock .aboutPage p {
         width: 90%;
         margin: 3.5% 0;
     }
+}
+
+/* Пасхалка */
+#bucket {
+    display: none;
+    position: fixed;
 }
