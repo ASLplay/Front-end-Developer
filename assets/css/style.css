@@ -1,4 +1,4 @@
-
+/* Шрифты */
 @font-face {
     font-family: 'Monserrat-Light';
     src: url(../fonts/Montserrat-Light.ttf);
@@ -41,6 +41,7 @@
     border: 3px solid orange;
   }
 
+/* Базовые настройки */
 *{
     margin: 0;
     padding: 0;
@@ -59,6 +60,11 @@
     --bg-color-main: #F3F3F3;
 }
 
+h1 {
+    padding: 5% 0 2%;
+font-family: Monserrat-Bold;
+color: var(--h2-color);
+}
 
 h2 {
     padding: 5% 0 2%;
@@ -70,8 +76,13 @@ color: var(--h2-color);
 h3 {
     font-family: Monserrat-Regular;
     margin: 3% 0;
-    
     font-size: clamp(14px, 2vw, 20px);
+}
+
+h4 {
+    font-family: Monserrat-Bold;
+font-size: clamp(20px, 3vw, 32px);
+color: var(--h2-color);
 }
 
 button {
@@ -99,6 +110,7 @@ main {
     min-height: 100vh;
 }
 
+/* Шапка */
 header {
     width: 100%;
     padding: 1% 0;
@@ -154,6 +166,7 @@ header .headerContent nav ul li a:hover {
     transition-duration: .2s ;
 }
 
+/* Адаптация шапки */
 @media (max-width:1000px) {
     header .headerContent {
         width: 90%;
@@ -181,5 +194,99 @@ header .headerContent nav ul li a:hover {
     }
     header .headerContent {
         width: 95%;
+    }
+}
+
+/* Подвал */
+footer {
+    background: var(--bg-color);
+    padding: 2% 0;
+    display: flex;
+    
+}
+
+footer .footerBlock {
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;justify-content: center;
+}
+
+footer .footerBlock img {
+    width: 5%;
+    min-width: 40px;
+}
+
+footer .footerBlock nav {
+    width: 40%;
+    margin: 2% 0;
+}
+
+footer .footerBlock nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+footer .footerBlock nav ul li  {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+footer .footerBlock nav ul li a {
+    font-family: Monserrat-Bold;
+    color: var(--color-a);
+    text-align: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+    transition-duration: .2s;
+    cursor: pointer;
+    user-select: none;
+}
+
+footer .footerBlock nav ul li a:hover {
+    border-bottom: 2px solid var(--bg-button) !important;
+    transition-duration: .2s ;
+}
+
+footer .footerBlock .aboutPage {
+    font-family: Monserrat-Regular;
+    color: var(--color-a);
+    border: 1px solid var(--color-a);
+    padding: 1%;
+    border-radius: 10px;
+}
+
+footer .footerBlock .aboutPage p {
+    width: 100%;
+    word-spacing: 1vw;
+}
+
+/* Адаптация подвала */
+@media (max-width:1000px) {
+    footer .footerBlock nav {
+        width: 60%;
+    }
+    footer .footerBlock .aboutPage {
+        border-radius: 5px;
+    }
+    
+}
+
+@media (max-width:600px) {
+    footer .footerBlock nav {
+        width: 80%;
+        margin: 3% 0;
+    }
+}
+
+@media (max-width:450px) {
+    footer .footerBlock {
+        width: 95%;
+    }
+    footer .footerBlock nav {
+        width: 90%;
+        margin: 3.5% 0;
     }
 }

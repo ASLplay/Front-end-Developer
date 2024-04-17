@@ -27,7 +27,7 @@
     background-color: rgba(255, 255, 255, 0);
 }
 
-#about h2 {
+#about h1 {
     font-size: clamp(24px, 3vw, 64px);
     color: white;
     padding: 0;
@@ -267,11 +267,76 @@ background-color: var(--bg-color-main);
 /* Услуги */
 #services {
     background: var(--bg-color-main);
+    padding-bottom: 5%;
 }
 
 #services h2{
     text-align: center;
 }
+
+#services .serviceBlock {
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#services .serviceBlock .block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    width: 27%;
+    min-width: 300px;
+    border: 1px solid var(--h2-color);
+    padding: 1%;
+    background: var(--bg-color-main);
+    margin: 2%;
+}
+
+#services .serviceBlock .block h4 {
+    text-align: center;
+    width: 100%;
+    margin: 3% 0;
+}
+
+#services .serviceBlock .block ul{
+width: 90%;
+margin: auto;
+font-family: Monserrat-Regular;
+}
+
+#services .serviceBlock .block ul li:first-child{
+    margin-bottom: 5%;
+}
+
+#services .serviceBlock .block p {
+    font-family: Monserrat-Bold;
+    text-align: center;
+    width: 100%;
+    color: var(--h2-color);
+    font-size: clamp(20px, 2vw, 30px);
+    margin: 5% 0;
+}
+
+#services .serviceBlock .block button {
+    color: white;
+    background: var(--h2-color);
+    border-radius: 10px;
+    border: none;
+    padding: 3% 5%;
+    display: block;
+    margin: 0 auto 3%;
+    transition: .25s;
+    cursor: pointer;
+}
+
+#services .serviceBlock .block button:hover {
+    transform: scale(110%);
+    transition: .25s;
+}
+/* Адаптация не требуеться */
 
 /* Контакты */
 .contactBlock {
