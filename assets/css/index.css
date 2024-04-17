@@ -129,6 +129,11 @@
         width: 80%;
         padding: 1%;    
     }
+
+    #about {
+        width: 80%;
+    }
+    
 }
 
 @media (max-width:700px) {
@@ -334,7 +339,13 @@ font-family: Monserrat-Regular;
     transform: scale(110%);
     transition: .25s;
 }
-/* Адаптация не требуеться */
+/* Адаптация услуг */
+
+@media (max-width:900px) {
+    #services .serviceBlock {
+        width: 90%;
+    }
+}
 
 /* Контакты */
 .contactBlock {
