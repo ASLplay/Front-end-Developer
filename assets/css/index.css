@@ -244,10 +244,8 @@ background-color: var(--bg-color-main);
     font-family: Monserrat-Bold;
     color: white;
     font-size: clamp(16px,2vw,30px);
-    /* text-shadow: 0px 0px 10px var; */
-    background: var(--h2-color);
+    background: var(--bg-color);
     width: max-content;
-    filter: drop-shadow(0px 0px 10px var(--h2-color));
     padding: 0.5% 1%;
     border-radius: 5px;
     transition: .35s;
