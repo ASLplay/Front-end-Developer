@@ -24,30 +24,30 @@
 * {
     scrollbar-width: thin;
     scrollbar-color: var(--bg-button) rgba(255, 166, 0, 0);
-  }
-  
-  /* Работает в Chrome, Edge и Safari */
-  *::-webkit-scrollbar {
+}
+
+/* Работает в Chrome, Edge и Safari */
+*::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  *::-webkit-scrollbar-track {
+}
+
+*::-webkit-scrollbar-track {
     background: rgba(255, 255, 255, 0);
-  }
-  
-  *::-webkit-scrollbar-thumb {
+}
+
+*::-webkit-scrollbar-thumb {
     background-color: var(--bg-button);
     border-radius: 20px;
     border: 3px solid orange;
-  }
+}
 
 /* Базовые настройки */
-*{
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
-    font-size: clamp(12px,1vw,20px);
+    font-size: clamp(12px, 1vw, 20px);
 }
 
 :root {
@@ -56,21 +56,21 @@
     --bg-color: #1C1D25;
     --liner-gradient: linear-gradient(90deg, #EF3636, #F06449);
     --bg-button: #EF3636;
-    --h2-color:#4a4a4a;
+    --h2-color: #4a4a4a;
     --bg-color-main: #F3F3F3;
 }
 
 h1 {
     padding: 5% 0 2%;
-font-family: Monserrat-Bold;
-color: var(--h2-color);
+    font-family: Monserrat-Bold;
+    color: var(--h2-color);
 }
 
 h2 {
     padding: 5% 0 2%;
-font-family: Monserrat-Bold;
-font-size: clamp(20px, 3vw, 32px);
-color: var(--h2-color);
+    font-family: Monserrat-Bold;
+    font-size: clamp(20px, 3vw, 32px);
+    color: var(--h2-color);
 }
 
 h3 {
@@ -81,8 +81,8 @@ h3 {
 
 h4 {
     font-family: Monserrat-Bold;
-font-size: clamp(20px, 3vw, 32px);
-color: var(--h2-color);
+    font-size: clamp(20px, 3vw, 32px);
+    color: var(--h2-color);
 }
 
 button {
@@ -145,7 +145,7 @@ header .headerContent nav ul {
     justify-content: space-between;
 }
 
-header .headerContent nav ul li  {
+header .headerContent nav ul li {
     width: 20%;
     display: flex;
     justify-content: center;
@@ -163,7 +163,7 @@ header .headerContent nav ul li a {
 
 header .headerContent nav ul li a:hover {
     border-bottom: 2px solid var(--bg-button) !important;
-    transition-duration: .2s ;
+    transition-duration: .2s;
 }
 
 /* Адаптация шапки */
@@ -189,9 +189,11 @@ header .headerContent nav ul li a:hover {
         flex-direction: column;
         padding-top: 1%;
     }
+
     header .headerContent nav {
         padding: 2% 0 1%;
     }
+
     header .headerContent {
         width: 95%;
     }
@@ -202,7 +204,7 @@ footer {
     background: var(--bg-color);
     padding: 2% 0;
     display: flex;
-    
+
 }
 
 footer .footerBlock {
@@ -210,13 +212,13 @@ footer .footerBlock {
     margin: auto;
     align-items: center;
     display: flex;
-    flex-direction: column;justify-content: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 footer .footerBlock img {
     width: 5%;
     min-width: 40px;
-    cursor: pointer;
 }
 
 footer .footerBlock nav {
@@ -230,7 +232,7 @@ footer .footerBlock nav ul {
     justify-content: space-between;
 }
 
-footer .footerBlock nav ul li  {
+footer .footerBlock nav ul li {
     width: 20%;
     display: flex;
     justify-content: center;
@@ -248,7 +250,7 @@ footer .footerBlock nav ul li a {
 
 footer .footerBlock nav ul li a:hover {
     border-bottom: 2px solid var(--bg-button) !important;
-    transition-duration: .2s ;
+    transition-duration: .2s;
 }
 
 footer .footerBlock .aboutPage {
@@ -269,10 +271,11 @@ footer .footerBlock .aboutPage p {
     footer .footerBlock nav {
         width: 60%;
     }
+
     footer .footerBlock .aboutPage {
         border-radius: 5px;
     }
-    
+
 }
 
 @media (max-width:600px) {
@@ -286,14 +289,9 @@ footer .footerBlock .aboutPage p {
     footer .footerBlock {
         width: 95%;
     }
+
     footer .footerBlock nav {
         width: 90%;
         margin: 3.5% 0;
     }
-}
-
-/* Пасхалка */
-#bucket {
-    display: none;
-    position: fixed;
 }
