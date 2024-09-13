@@ -1,4 +1,8 @@
 /* Задний фон */
+html {
+    scroll-behavior: smooth;
+}
+
 .background {
     background: url(../img/other/background.svg) no-repeat;
     width: 100%;
