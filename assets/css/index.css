@@ -462,12 +462,12 @@ html {
 }
 
 
-.application .applicationBlock form .applicationButton {
+.application .applicationBlock .applicationButton {
     display: flex;
     justify-content: space-around;
 }
 
-.application .applicationBlock form .applicationButton {
+.application .applicationBlock .applicationButton {
     display: flex;
     justify-content: space-around;
 }
